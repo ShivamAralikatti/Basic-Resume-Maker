@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 class="mb-4">Resume Generator</h2>
+
+  <form id="resumeForm">
+    <!-- Personal Information -->
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" class="form-control" id="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="linkedin">LinkedIn Profile:</label>
+      <input type="text" class="form-control" id="linkedin">
+    </div>
+    <div class="form-group">
+      <label for="github">GitHub Profile:</label>
+      <input type="text" class="form-control" id="github">
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" class="form-control" id="phoneNumber">
+    </div>
+    
+    <!-- Objective -->
+    <h4 class="mt-4">Objective</h4>
+    <div class="form-group">
+      <label for="objective">Objective:</label>
+      <textarea class="form-control" id="objective" rows="4" required></textarea>
+    </div>
+
+    <!-- Skills -->
+    <h4 class="mt-4">Skills</h4>
+    <div class="form-group">
+      <label for="skills">Skills (comma-separated):</label>
+      <input type="text" class="form-control" id="skills" required>
+    </div>
+
+    <!-- Education -->
+    <h4 class="mt-4">Education</h4>
+    <div class="form-group">
+      <label for="board">Board:</label>
+      <input type="text" class="form-control" id="board" required>
+    </div>
+    <div class="form-group">
+      <label for="institution">Institution:</label>
+      <input type="text" class="form-control" id="institution" required>
+    </div>
+    <div class="form-group">
+      <label for="yearOfPassing">Year of Passing:</label>
+      <input type="text" class="form-control" id="yearOfPassing" required>
+    </div>
+    <div class="form-group">
+      <label for="gpaPercentage">GPA/Percentage:</label>
+      <input type="text" class="form-control" id="gpaPercentage" required>
+    </div>
+
+    <!-- Activities -->
+    <h4 class="mt-4">Activities</h4>
+    <div class="form-group">
+      <label for="objective">Activities:</label>
+      <textarea class="form-control" id="activities" rows="4" required></textarea>
+    </div>
+  
+    <!-- Submit Button -->
+    <button type="button" class="btn btn-primary" onclick="generateResume()">Generate Resume</button>
+  </form>
+
+  <!-- Template Container -->
+  <div id="generatedResumeContainer" class="mt-4"></div>
+
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your existing JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
