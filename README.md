@@ -22,7 +22,7 @@ A simple web application for generating and previewing resumes. The application 
 
 - `index.html`: Main page with the resume input form.
 - `script.js`: JavaScript file containing the logic for form handling and resume generation.
-- `style.css`: Stylesheet for formatting the pages.
+- `styles.css`: Stylesheet for formatting the pages.
 
 ## Contributing
 
